@@ -12,7 +12,6 @@ from nisar.workflows.insar_runconfig import InsarRunConfig
 from threading import Thread
 def get_config(reference_path: str, secondary_path: str,dem_path:str) -> Path:
     """Create a configuration file for isce3.
-
     Args:
         reference_path: Path of the reference scene.
         secondary_path: Path of the secondary scene.
@@ -59,7 +58,6 @@ def get_config(reference_path: str, secondary_path: str,dem_path:str) -> Path:
 
     return Path(out_path+'/insar.yaml')
 
-
 def process_isce3(reference_path:str, secondary_path: str,dem_path:str) -> Path:
     yaml_path = get_config(reference_path, secondary_path,dem_path)
     args = argparse.Namespace(run_config_path=str(yaml_path), log_file=True)
@@ -88,8 +86,6 @@ def process_isce3(reference_path:str, secondary_path: str,dem_path:str) -> Path:
     _, out_paths = h5_prep.get_products_and_paths(insar_runcfg.cfg)
 
     insar.run(cfg=insar_runcfg.cfg, out_paths=out_paths, run_steps=run_steps)
-
-
 
 def make_sbas(n):
     current_path = os.getcwd()
@@ -137,7 +133,6 @@ def make_sbas(n):
     #for i  in range(len(pairs)):
         #print(pairs[i][0], ",",pairs[i][1])
     return pairs
-
 
 def mutl_run(data):
     ###获取当前路径
@@ -189,8 +184,6 @@ if __name__ == '__main__':
     pool.map(mutl_run, data)
     pool.close()
     pool.join()
-
-
 
     try:
         shutil.rmtree("isce3_process_data")
