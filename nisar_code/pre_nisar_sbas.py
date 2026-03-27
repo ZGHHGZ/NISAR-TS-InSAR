@@ -142,7 +142,7 @@ def make_sbas(n):
 def mutl_run(data):
     ###获取当前路径
     fold_path = os.getcwd()
-    reference_path = fold_path + "/rslc//" + str(data[0])
+    reference_path = fold_path + "/rslc/" + str(data[0])
     secondary_path = fold_path + "/rslc/" + str(data[1])
     dem_path = fold_path + "/dem/dem.tif"
     ##获取data[0]、data[1]的日期
