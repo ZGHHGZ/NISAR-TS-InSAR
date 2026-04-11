@@ -168,7 +168,7 @@ if __name__ == '__main__':
     # 1. 定义命令行参数
     parser = argparse.ArgumentParser(description="NISAR4SBAS 并行预处理")
     parser.add_argument("-n", type=int, default=3, help="SBAS 相邻影像连接数量，默认3")
-    parser.add_argument("-p", type=int, default=4, help="进程数，默认 4")
+    parser.add_argument("-p", type=int, default=8, help="进程数，默认 8")
     args = parser.parse_args()
     # 2. 获取输入的 n 和 p
     n = args.n
