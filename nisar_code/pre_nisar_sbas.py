@@ -156,7 +156,7 @@ def print_author_info():
     print("Author: Guanghui Zhang")
     print("Institution: Shandong University of Science and Technology (SDUST)")
     print("Email: 2336164866@qq.com")
-    print("Create Time: 2025")
+    print("Create Time: 2026")
     print("Description: Time-series GUNW Generation")
     print("==============================================")
     time.sleep(3)
