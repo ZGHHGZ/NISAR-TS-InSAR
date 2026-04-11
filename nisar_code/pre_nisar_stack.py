@@ -173,11 +173,6 @@ def mutl_slc(data):
     process_isce3(reference_path=data[0],secondary_path=data[1],dem_path=dem_path)
 
 
-
-
-
-
-
 # =========================
 # tiff裁剪
 # =========================
@@ -208,7 +203,6 @@ def crop_tif(input_path, output_path=None):
     out_ds.FlushCache()
 
     print(f"已裁剪: {input_path}")
-
 
 
 # =========================
@@ -278,13 +272,22 @@ def crop_rdr_slc(input_rdr, output_rdr=None):
     out_ds = None
     print(f"已裁剪: {input_rdr}")
 
+def print_author_info():
+    print("==============================================")
+    print("Author: Guanghui Zhang")
+    print("Institution: Shandong University of Science and Technology (SDUST)")
+    print("Email: 2336164866@qq.com")
+    print("Create Time: 2026")
+    print("Description: Generate Time-Series Coregistered SLC")
+    print("==============================================")
+    time.sleep(3)
 
 
 
 
 #Coregistered SLC
 if  __name__ == "__main__":
-
+    print_author_info()
     # 1. 定义命令行参数
     parser = argparse.ArgumentParser(description="NISAR4DS并行预处理")
     parser.add_argument("-p", type=int, default=8, help="进程数，默认 8")
