@@ -1,19 +1,9 @@
 """isce3 processing."""
 
-# =====================================================
-print("=" * 50)
-print("Author: Guanghui Zhang")
-print("Institution: Shandong University of Science and Technology (SDUST)")
-print("Email: 2336164866@qq.com")
-print("Create Time: 2026")
-print("Description: Time-series GUNW Generation")
-print("=" * 50)
-# =====================================================
-
-
 import multiprocessing
 import os
 import re
+import time
 import shutil
 from datetime import datetime
 import argparse
@@ -161,7 +151,20 @@ def mutl_run(data):
         except:
             pass
 
+def print_author_info():
+    print("==============================================")
+    print("Author: Guanghui Zhang")
+    print("Institution: Shandong University of Science and Technology (SDUST)")
+    print("Email: 2336164866@qq.com")
+    print("Create Time: 2025")
+    print("Description: Time-series GUNW Generation")
+    print("==============================================")
+    time.sleep(3)
+
+
+
 if __name__ == '__main__':
+    print_author_info()
     # 1. 定义命令行参数
     parser = argparse.ArgumentParser(description="NISAR4SBAS 并行预处理")
     parser.add_argument("-n", type=int, default=3, help="SBAS 相邻影像连接数量，默认3")
