@@ -14,7 +14,7 @@ from osgeo import gdal
 import numpy as np
 from scipy.ndimage import zoom
 import tifffile as tiff
-
+import time
 
 def get_config(reference_path: str, secondary_path: str,dem_path:str) -> Path:
     """Create a configuration file for isce3.
