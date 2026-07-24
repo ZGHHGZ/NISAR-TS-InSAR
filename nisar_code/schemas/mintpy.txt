@@ -2,7 +2,6 @@
 
 mintpy.load.processor        = auto
 mintpy.deramp                = quadratic
-
 #mintpy.reference.lalo            =35.9345,118.34427
 mintpy.reference.date =no
 mintpy.troposphericDelay.method = no
