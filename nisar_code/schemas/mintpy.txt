@@ -11,3 +11,4 @@ mintpy.troposphericDelay.method = no
 ## Mintpy options
 mintpy.compute.cluster     = local  # if dask is not available, set this option to no S
 mintpy.compute.numWorker   = 8 
+mintpy.deramp                = quadratic
