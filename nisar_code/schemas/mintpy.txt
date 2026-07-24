@@ -1,7 +1,7 @@
 ## load_data.py -H to check more details and example inputs.
 
 mintpy.load.processor        = auto
-#mintpy.deramp                = quadratic
+mintpy.deramp                = quadratic
 
 #mintpy.reference.lalo            =35.9345,118.34427
 mintpy.reference.date =no
@@ -11,4 +11,3 @@ mintpy.troposphericDelay.method = no
 ## Mintpy options
 mintpy.compute.cluster     = local  # if dask is not available, set this option to no S
 mintpy.compute.numWorker   = 8 
-mintpy.deramp                = quadratic
