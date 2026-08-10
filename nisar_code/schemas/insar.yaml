@@ -152,8 +152,8 @@ runconfig:
                 # ISCE3 output rasters always have North-up West-left orientation
                 output_posting:
                     A:
-                        x_posting:
-                        y_posting:
+                        x_posting: 0.0002
+                        y_posting: 0.0002
                     B:
                         x_posting:
                         y_posting:
@@ -173,8 +173,8 @@ runconfig:
 
                     output_posting:
                         A:
-                            x_posting: 20
-                            y_posting: 20
+                            x_posting: 0.0002
+                            y_posting: 0.0002
                         B:
                             x_posting:
                             y_posting:
